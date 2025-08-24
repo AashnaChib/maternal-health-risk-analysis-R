@@ -1,4 +1,4 @@
-# Data Analytics R Code
+# Decision Trees
 # Set the working directory to the correct location
 setwd("~/Desktop/Data Analytics - Sets/All data sets")  # Adjust to your file location
 getwd()  # Check the working directory
@@ -104,3 +104,4 @@ print(paste("Test Error Rate for Pruned Tree 65 Nodes):", round(pruned_test_erro
 unpruned_predictions <- predict(tree_model, newdata = test, type = "class")
 unpruned_test_error_rate <- 1 - mean(unpruned_predictions == test$RiskLevel)
 print(paste("Test Error Rate for Unpruned Tree:", round(unpruned_test_error_rate * 100, 2), "%"))
+
